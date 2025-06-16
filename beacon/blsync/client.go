@@ -17,18 +17,18 @@
 package blsync
 
 import (
-	"github.com/m-quigley/go-ethereum/beacon/light"
-	"github.com/m-quigley/go-ethereum/beacon/light/api"
-	"github.com/m-quigley/go-ethereum/beacon/light/request"
-	"github.com/m-quigley/go-ethereum/beacon/light/sync"
-	"github.com/m-quigley/go-ethereum/beacon/params"
-	"github.com/m-quigley/go-ethereum/beacon/types"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/mclock"
-	"github.com/m-quigley/go-ethereum/ethdb/memorydb"
-	"github.com/m-quigley/go-ethereum/event"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/beacon/light"
+	"github.com/m-quigley/op-geth/beacon/light/api"
+	"github.com/m-quigley/op-geth/beacon/light/request"
+	"github.com/m-quigley/op-geth/beacon/light/sync"
+	"github.com/m-quigley/op-geth/beacon/params"
+	"github.com/m-quigley/op-geth/beacon/types"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/mclock"
+	"github.com/m-quigley/op-geth/ethdb/memorydb"
+	"github.com/m-quigley/op-geth/event"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 type Client struct {

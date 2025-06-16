@@ -17,11 +17,11 @@
 package state
 
 import (
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/rlp"
-	"github.com/m-quigley/go-ethereum/trie"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/rlp"
+	"github.com/m-quigley/op-geth/trie"
 )
 
 // NewStateSync creates a new state trie download scheduler.

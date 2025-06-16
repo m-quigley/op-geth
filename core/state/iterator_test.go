@@ -19,9 +19,9 @@ package state
 import (
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/crypto"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/crypto"
 )
 
 // Tests that the node iterator indeed walks over the entire database contents.

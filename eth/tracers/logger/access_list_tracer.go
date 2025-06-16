@@ -19,10 +19,10 @@ package logger
 import (
 	"maps"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/tracing"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/tracing"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
 )
 
 // accessList is an accumulator for the set of accounts and storage slots an EVM

@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/accounts/abi"
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/accounts/abi"
+	"github.com/m-quigley/op-geth/common"
 	"github.com/stretchr/testify/require"
 )
 

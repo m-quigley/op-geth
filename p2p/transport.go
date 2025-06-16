@@ -26,11 +26,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/bitutil"
-	"github.com/m-quigley/go-ethereum/metrics"
-	"github.com/m-quigley/go-ethereum/p2p/rlpx"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/bitutil"
+	"github.com/m-quigley/op-geth/metrics"
+	"github.com/m-quigley/op-geth/p2p/rlpx"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 const (

@@ -22,14 +22,14 @@ import (
 	"math/big"
 	"sync/atomic"
 
-	"github.com/m-quigley/go-ethereum/accounts/abi"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/core/tracing"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/eth/tracers"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/accounts/abi"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/core/tracing"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/eth/tracers"
+	"github.com/m-quigley/op-geth/params"
 )
 
 //go:generate go run github.com/fjl/gencodec -type callFrame -field-override callFrameMarshaling -out gen_callframe_json.go
@@ -43,7 +43,7 @@ type callLog struct {
 	Topics  []common.Hash  `json:"topics"`
 	Data    hexutil.Bytes  `json:"data"`
 	// Position of the log relative to subcalls within the same trace
-	// See https://github.com/m-quigley/go-ethereum/pull/28389 for details
+	// See https://github.com/m-quigley/op-geth/pull/28389 for details
 	Position hexutil.Uint `json:"position"`
 }
 

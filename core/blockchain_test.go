@@ -30,22 +30,22 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/consensus"
-	"github.com/m-quigley/go-ethereum/consensus/beacon"
-	"github.com/m-quigley/go-ethereum/consensus/ethash"
-	"github.com/m-quigley/go-ethereum/core/history"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/state"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/core/vm/program"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/eth/tracers/logger"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/ethdb/pebble"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/trie"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/consensus"
+	"github.com/m-quigley/op-geth/consensus/beacon"
+	"github.com/m-quigley/op-geth/consensus/ethash"
+	"github.com/m-quigley/op-geth/core/history"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/state"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/core/vm/program"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/eth/tracers/logger"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/ethdb/pebble"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/trie"
 )
 
 // So we can deterministically seed different blockchains
@@ -1509,7 +1509,7 @@ func testEIP161AccountRemoval(t *testing.T, scheme string) {
 // tests that under weird reorg conditions the blockchain and its internal header-
 // chain return the same latest block/header.
 //
-// https://github.com/m-quigley/go-ethereum/pull/15941
+// https://github.com/m-quigley/op-geth/pull/15941
 func TestBlockchainHeaderchainReorgConsistency(t *testing.T) {
 	testBlockchainHeaderchainReorgConsistency(t, rawdb.HashScheme)
 	testBlockchainHeaderchainReorgConsistency(t, rawdb.PathScheme)
@@ -1725,8 +1725,8 @@ func testBlockchainRecovery(t *testing.T, scheme string) {
 // overtake the 'canon' chain until after it's passed canon by about 200 blocks.
 //
 // Details at:
-//   - https://github.com/m-quigley/go-ethereum/issues/18977
-//   - https://github.com/m-quigley/go-ethereum/pull/18988
+//   - https://github.com/m-quigley/op-geth/issues/18977
+//   - https://github.com/m-quigley/op-geth/pull/18988
 func TestLowDiffLongChain(t *testing.T) {
 	testLowDiffLongChain(t, rawdb.HashScheme)
 	testLowDiffLongChain(t, rawdb.PathScheme)

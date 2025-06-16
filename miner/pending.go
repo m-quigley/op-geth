@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 // pendingTTL indicates the period of time a generated pending block should

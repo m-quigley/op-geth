@@ -24,13 +24,13 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // testerAccountPool is a pool to maintain currently active tester accounts,
@@ -367,7 +367,7 @@ func TestClique(t *testing.T) {
 			failure: errRecentlySigned,
 		}, {
 			// Recent signatures should not reset on checkpoint blocks imported in a new
-			// batch (https://github.com/m-quigley/go-ethereum/issues/17593). Whilst this
+			// batch (https://github.com/m-quigley/op-geth/issues/17593). Whilst this
 			// seems overly specific and weird, it was a Rinkeby consensus split.
 			epoch:   3,
 			signers: []string{"A", "B", "C"},

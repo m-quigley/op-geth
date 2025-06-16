@@ -24,7 +24,7 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set/v2"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // fileCache is a cache of files seen during scan of keystore.

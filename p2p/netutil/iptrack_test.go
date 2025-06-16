@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common/mclock"
+	"github.com/m-quigley/op-geth/common/mclock"
 )
 
 const (

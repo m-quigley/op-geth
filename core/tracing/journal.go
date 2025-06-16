@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 // journal is a state change journal to be wrapped around a tracer.

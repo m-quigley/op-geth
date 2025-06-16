@@ -26,14 +26,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/prque"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto/kzg4844"
-	"github.com/m-quigley/go-ethereum/eth/ethconfig"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/metrics"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/prque"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto/kzg4844"
+	"github.com/m-quigley/op-geth/eth/ethconfig"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/metrics"
+	"github.com/m-quigley/op-geth/params"
 )
 
 const (

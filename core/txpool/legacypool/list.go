@@ -27,9 +27,9 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/txpool"
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/txpool"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 // nonceHeap is a heap.Interface implementation over 64bit unsigned integers for

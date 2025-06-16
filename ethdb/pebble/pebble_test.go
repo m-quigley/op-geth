@@ -21,8 +21,8 @@ import (
 
 	"github.com/cockroachdb/pebble"
 	"github.com/cockroachdb/pebble/vfs"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/ethdb/dbtest"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/ethdb/dbtest"
 )
 
 func TestPebbleDB(t *testing.T) {

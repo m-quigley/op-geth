@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/tracing"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/tracing"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // Context contains some contextual infos for a transaction execution that is not

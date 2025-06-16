@@ -31,8 +31,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/route53"
 	"github.com/aws/aws-sdk-go-v2/service/route53/types"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/p2p/dnsdisc"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/p2p/dnsdisc"
 	"github.com/urfave/cli/v2"
 )
 

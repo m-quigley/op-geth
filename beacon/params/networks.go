@@ -19,7 +19,7 @@ package params
 import (
 	_ "embed"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 //go:embed checkpoint_mainnet.hex

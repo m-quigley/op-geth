@@ -32,7 +32,7 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/internal/reexec"
+	"github.com/m-quigley/op-geth/internal/reexec"
 )
 
 func NewTestCmd(t *testing.T, data interface{}) *TestCmd {

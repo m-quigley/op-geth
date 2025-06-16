@@ -26,12 +26,12 @@ import (
 	"slices"
 	"sync/atomic"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/consensus/misc/eip1559"
-	"github.com/m-quigley/go-ethereum/consensus/misc/eip4844"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/consensus/misc/eip1559"
+	"github.com/m-quigley/op-geth/consensus/misc/eip4844"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 var (

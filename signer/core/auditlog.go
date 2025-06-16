@@ -22,11 +22,11 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/internal/ethapi"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/signer/core/apitypes"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/internal/ethapi"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/signer/core/apitypes"
 )
 
 type AuditLogger struct {

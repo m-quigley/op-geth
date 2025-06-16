@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/params"
 )
 
 func u64(val uint64) *uint64 { return &val }

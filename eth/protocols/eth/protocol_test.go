@@ -21,9 +21,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 // Tests that the custom union field encoder and decoder works correctly.

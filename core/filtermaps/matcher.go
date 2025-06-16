@@ -25,10 +25,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/mclock"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/mclock"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
 )
 
 const doRuntimeStats = false

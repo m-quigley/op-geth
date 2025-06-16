@@ -20,10 +20,10 @@ import (
 	"math/rand"
 
 	mapset "github.com/deckarep/golang-set/v2"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/p2p"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/p2p"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 const (

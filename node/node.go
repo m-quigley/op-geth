@@ -30,16 +30,16 @@ import (
 	"sync"
 
 	"github.com/gofrs/flock"
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/ethdb/memorydb"
-	"github.com/m-quigley/go-ethereum/event"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/p2p"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/ethdb/memorydb"
+	"github.com/m-quigley/op-geth/event"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/p2p"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 // Node is a container on which services can be registered.

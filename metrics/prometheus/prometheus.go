@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/metrics"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/metrics"
 )
 
 // Handler returns an HTTP handler which dump metrics in Prometheus format.

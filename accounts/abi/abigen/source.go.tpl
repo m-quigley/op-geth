@@ -8,12 +8,12 @@ import (
 	"strings"
 	"errors"
 
-	ethereum "github.com/m-quigley/go-ethereum"
-	"github.com/m-quigley/go-ethereum/accounts/abi"
-	"github.com/m-quigley/go-ethereum/accounts/abi/bind"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/event"
+	ethereum "github.com/m-quigley/op-geth"
+	"github.com/m-quigley/op-geth/accounts/abi"
+	"github.com/m-quigley/op-geth/accounts/abi/bind"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

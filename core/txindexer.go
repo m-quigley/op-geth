@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // TxIndexProgress is the struct describing the progress for transaction indexing.

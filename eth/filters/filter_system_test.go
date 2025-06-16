@@ -25,17 +25,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/consensus/ethash"
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/filtermaps"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/event"
-	"github.com/m-quigley/go-ethereum/internal/ethapi"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/consensus/ethash"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/filtermaps"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/event"
+	"github.com/m-quigley/op-geth/internal/ethapi"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 type testBackend struct {

@@ -21,12 +21,12 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/tracing"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/eth/tracers"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/tracing"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/eth/tracers"
+	"github.com/m-quigley/op-geth/params"
 	"github.com/stretchr/testify/require"
 )
 

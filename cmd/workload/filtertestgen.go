@@ -26,9 +26,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/internal/flags"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/internal/flags"
+	"github.com/m-quigley/op-geth/rpc"
 	"github.com/urfave/cli/v2"
 )
 

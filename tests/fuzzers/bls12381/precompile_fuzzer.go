@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/vm"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/vm"
 )
 
 const (

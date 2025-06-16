@@ -26,8 +26,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/p2p/enr"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/p2p/enr"
+	"github.com/m-quigley/op-geth/rlp"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/errors"
 	"github.com/syndtr/goleveldb/leveldb/iterator"

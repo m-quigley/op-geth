@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/accounts/keystore"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/accounts/keystore"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 // Tests that the account management snippets work correctly.

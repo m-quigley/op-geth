@@ -23,10 +23,10 @@ import (
 	"maps"
 	"math/big"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/params/forks"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/params/forks"
 )
 
 var ErrInvalidChainId = errors.New("invalid chain id for signer")

@@ -21,7 +21,7 @@ import (
 
 	"github.com/holiman/uint256"
 
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 type RollupCostFunc func(tx types.RollupTransaction) *uint256.Int

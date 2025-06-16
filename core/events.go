@@ -17,7 +17,7 @@
 package core
 
 import (
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

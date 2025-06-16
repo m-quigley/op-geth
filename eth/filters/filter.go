@@ -24,12 +24,12 @@ import (
 	"slices"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/filtermaps"
-	"github.com/m-quigley/go-ethereum/core/history"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/filtermaps"
+	"github.com/m-quigley/op-geth/core/history"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 // Filter can be used to retrieve and filter logs.

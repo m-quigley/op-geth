@@ -22,11 +22,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/trie/trienode"
-	"github.com/m-quigley/go-ethereum/triedb/database"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/trie/trienode"
+	"github.com/m-quigley/op-geth/triedb/database"
 )
 
 // Trie represents a Merkle Patricia Trie. Use New to create a trie that operates

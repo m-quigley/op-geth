@@ -19,7 +19,7 @@ package snapshot
 import (
 	"bytes"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 // binaryIterator is a simplistic iterator to step over the accounts or storage

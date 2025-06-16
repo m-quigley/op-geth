@@ -29,12 +29,12 @@ import (
 	"time"
 
 	"github.com/donovanhide/eventsource"
-	"github.com/m-quigley/go-ethereum/beacon/merkle"
-	"github.com/m-quigley/go-ethereum/beacon/params"
-	"github.com/m-quigley/go-ethereum/beacon/types"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/beacon/merkle"
+	"github.com/m-quigley/op-geth/beacon/params"
+	"github.com/m-quigley/op-geth/beacon/types"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/log"
 )
 
 var (

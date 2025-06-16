@@ -22,7 +22,7 @@ import (
 	"time"
 
 	"github.com/golang/snappy"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 // This is the maximum amount of data that will be buffered in memory

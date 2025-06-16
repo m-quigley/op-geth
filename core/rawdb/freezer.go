@@ -26,9 +26,9 @@ import (
 	"sync/atomic"
 
 	"github.com/gofrs/flock"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/metrics"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/metrics"
 )
 
 var (

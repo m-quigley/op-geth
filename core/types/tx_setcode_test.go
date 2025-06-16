@@ -19,7 +19,7 @@ package types
 import (
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 // TestParseDelegation tests a few possible delegation designator values and

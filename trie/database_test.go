@@ -17,12 +17,12 @@
 package trie
 
 import (
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/trie/trienode"
-	"github.com/m-quigley/go-ethereum/triedb/database"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/trie/trienode"
+	"github.com/m-quigley/op-geth/triedb/database"
 )
 
 // testReader implements database.Reader interface, providing function to

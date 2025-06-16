@@ -5,7 +5,7 @@
 syntax = "proto2";
 package hw.trezor.messages.common;
 
-option go_package  = "github.com/m-quigley/go-ethereum/accounts/usbwallet/trezor";
+option go_package  = "github.com/m-quigley/op-geth/accounts/usbwallet/trezor";
 
 /**
  * Response: Success of the previous request

@@ -17,10 +17,10 @@
 package blobpool
 
 import (
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/state"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/state"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // BlockChain defines the minimal set of methods needed to back a blob pool with

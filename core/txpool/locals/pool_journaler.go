@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/core/txpool"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/core/txpool"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // A PoolJournaler periodically journales a transaction pool to disk.

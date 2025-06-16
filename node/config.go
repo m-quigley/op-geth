@@ -25,11 +25,11 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/p2p"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/p2p"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 const (

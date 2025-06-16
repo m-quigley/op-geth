@@ -22,12 +22,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/prque"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/prque"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 // InitDatabaseFromFreezer reinitializes an empty database from a previous batch

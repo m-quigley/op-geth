@@ -20,10 +20,10 @@ import (
 	"errors"
 
 	"github.com/holiman/billy"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 // limboBlob is a wrapper around an opaque blobset that also contains the tx hash

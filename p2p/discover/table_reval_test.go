@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common/mclock"
-	"github.com/m-quigley/go-ethereum/p2p/enode"
-	"github.com/m-quigley/go-ethereum/p2p/enr"
+	"github.com/m-quigley/op-geth/common/mclock"
+	"github.com/m-quigley/op-geth/p2p/enode"
+	"github.com/m-quigley/op-geth/p2p/enr"
 )
 
 // This test checks that revalidation can handle a node disappearing while

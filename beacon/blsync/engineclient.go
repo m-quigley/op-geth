@@ -22,13 +22,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/beacon/engine"
-	"github.com/m-quigley/go-ethereum/beacon/params"
-	"github.com/m-quigley/go-ethereum/beacon/types"
-	"github.com/m-quigley/go-ethereum/common"
-	ctypes "github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/beacon/engine"
+	"github.com/m-quigley/op-geth/beacon/params"
+	"github.com/m-quigley/op-geth/beacon/types"
+	"github.com/m-quigley/op-geth/common"
+	ctypes "github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 type engineClient struct {

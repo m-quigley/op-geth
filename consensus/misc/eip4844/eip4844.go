@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/params/forks"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/params/forks"
 )
 
 var (

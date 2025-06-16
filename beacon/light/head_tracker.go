@@ -21,10 +21,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/beacon/params"
-	"github.com/m-quigley/go-ethereum/beacon/types"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/beacon/params"
+	"github.com/m-quigley/op-geth/beacon/types"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // HeadTracker keeps track of the latest validated head and the "prefetch" head

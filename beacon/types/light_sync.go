@@ -20,10 +20,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/m-quigley/go-ethereum/beacon/merkle"
-	"github.com/m-quigley/go-ethereum/beacon/params"
-	"github.com/m-quigley/go-ethereum/common"
-	ctypes "github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/beacon/merkle"
+	"github.com/m-quigley/op-geth/beacon/params"
+	"github.com/m-quigley/op-geth/common"
+	ctypes "github.com/m-quigley/op-geth/core/types"
 )
 
 // HeadInfo represents an unvalidated new head announcement.

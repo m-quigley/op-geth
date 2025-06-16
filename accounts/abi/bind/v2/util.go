@@ -21,10 +21,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/m-quigley/go-ethereum"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // WaitMined waits for tx to be mined on the blockchain.

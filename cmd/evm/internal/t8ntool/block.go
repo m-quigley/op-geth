@@ -24,13 +24,13 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/common/math"
-	"github.com/m-quigley/go-ethereum/consensus/clique"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/common/math"
+	"github.com/m-quigley/op-geth/consensus/clique"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/rlp"
 	"github.com/urfave/cli/v2"
 )
 

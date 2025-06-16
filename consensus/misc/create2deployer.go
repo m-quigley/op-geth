@@ -3,11 +3,11 @@ package misc
 import (
 	_ "embed"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // The original create2deployer contract could not be deployed to Base mainnet at

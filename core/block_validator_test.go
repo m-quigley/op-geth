@@ -21,16 +21,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/consensus"
-	"github.com/m-quigley/go-ethereum/consensus/beacon"
-	"github.com/m-quigley/go-ethereum/consensus/clique"
-	"github.com/m-quigley/go-ethereum/consensus/ethash"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/consensus"
+	"github.com/m-quigley/op-geth/consensus/beacon"
+	"github.com/m-quigley/op-geth/consensus/clique"
+	"github.com/m-quigley/op-geth/consensus/ethash"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // Tests that simple header verification works, for both good and bad blocks.

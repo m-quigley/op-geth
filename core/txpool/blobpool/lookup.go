@@ -17,7 +17,7 @@
 package blobpool
 
 import (
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 type txMetadata struct {

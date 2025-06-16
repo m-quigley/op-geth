@@ -24,11 +24,11 @@ import (
 	"regexp"
 	"slices"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/internal/flags"
-	"github.com/m-quigley/go-ethereum/tests"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/internal/flags"
+	"github.com/m-quigley/op-geth/tests"
 	"github.com/urfave/cli/v2"
 )
 

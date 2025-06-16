@@ -22,14 +22,14 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/state"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto/kzg4844"
-	"github.com/m-quigley/go-ethereum/event"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/state"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto/kzg4844"
+	"github.com/m-quigley/op-geth/event"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // TxStatus is the current status of a transaction as seen by the pool.

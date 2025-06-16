@@ -22,15 +22,15 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/m-quigley/go-ethereum"
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/event"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rpc"
-	"github.com/m-quigley/go-ethereum/signer/core/apitypes"
+	"github.com/m-quigley/op-geth"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/event"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rpc"
+	"github.com/m-quigley/op-geth/signer/core/apitypes"
 )
 
 type ExternalBackend struct {

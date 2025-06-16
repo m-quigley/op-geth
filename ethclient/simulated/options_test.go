@@ -22,10 +22,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum"
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // Tests that the simulator starts with the initial gas limit in the genesis block,

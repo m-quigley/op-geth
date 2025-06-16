@@ -19,12 +19,12 @@ package pathdb
 import (
 	"fmt"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rlp"
-	"github.com/m-quigley/go-ethereum/triedb/database"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rlp"
+	"github.com/m-quigley/op-geth/triedb/database"
 )
 
 // The types of locations where the node is found.

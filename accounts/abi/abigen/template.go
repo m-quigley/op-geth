@@ -21,7 +21,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/m-quigley/go-ethereum/accounts/abi"
+	"github.com/m-quigley/op-geth/accounts/abi"
 )
 
 // tmplData is the data structure required to fill the binding template.

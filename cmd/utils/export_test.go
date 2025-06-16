@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 // TestExport does basic sanity checks on the export/import functionality

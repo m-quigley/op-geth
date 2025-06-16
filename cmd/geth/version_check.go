@@ -27,7 +27,7 @@ import (
 	"strings"
 
 	"github.com/jedisct1/go-minisign"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/log"
 	"github.com/urfave/cli/v2"
 )
 

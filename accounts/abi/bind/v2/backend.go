@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/m-quigley/go-ethereum"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 var (

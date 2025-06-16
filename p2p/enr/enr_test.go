@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

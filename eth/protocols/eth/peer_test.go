@@ -23,9 +23,9 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/p2p"
-	"github.com/m-quigley/go-ethereum/p2p/enode"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/p2p"
+	"github.com/m-quigley/op-geth/p2p/enode"
 )
 
 // testPeer is a simulated peer to allow testing direct network calls.

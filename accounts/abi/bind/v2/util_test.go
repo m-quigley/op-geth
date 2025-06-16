@@ -23,12 +23,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/accounts/abi/bind/v2"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/ethclient/simulated"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/accounts/abi/bind/v2"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/ethclient/simulated"
+	"github.com/m-quigley/op-geth/params"
 )
 
 var waitDeployedTests = map[string]struct {

@@ -20,8 +20,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // BeaconDevSync is a development helper to test synchronization by providing

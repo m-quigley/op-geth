@@ -28,22 +28,22 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/consensus"
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/state"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/eth/tracers/logger"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/internal/ethapi"
-	"github.com/m-quigley/go-ethereum/internal/ethapi/override"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/rlp"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/consensus"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/state"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/eth/tracers/logger"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/internal/ethapi"
+	"github.com/m-quigley/op-geth/internal/ethapi/override"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/rlp"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 const (
@@ -706,7 +706,7 @@ func (api *API) traceBlockParallel(ctx context.Context, block *types.Block, stat
 				// Reconstruct the block context for each transaction
 				// as the GetHash function of BlockContext is not safe for
 				// concurrent use.
-				// See: https://github.com/m-quigley/go-ethereum/issues/29114
+				// See: https://github.com/m-quigley/op-geth/issues/29114
 				blockCtx := core.NewEVMBlockContext(block.Header(), api.chainContext(ctx), nil, api.backend.ChainConfig(), task.statedb)
 				res, err := api.traceTx(ctx, txs[task.index], msg, txctx, blockCtx, task.statedb, config, nil)
 				if err != nil {

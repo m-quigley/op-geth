@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/state"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/state"
 	"github.com/urfave/cli/v2"
 )
 

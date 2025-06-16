@@ -27,14 +27,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/eth"
-	"github.com/m-quigley/go-ethereum/internal/era"
-	"github.com/m-quigley/go-ethereum/internal/ethapi"
-	"github.com/m-quigley/go-ethereum/internal/flags"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/trie"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/eth"
+	"github.com/m-quigley/op-geth/internal/era"
+	"github.com/m-quigley/op-geth/internal/ethapi"
+	"github.com/m-quigley/op-geth/internal/flags"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/trie"
 	"github.com/urfave/cli/v2"
 )
 

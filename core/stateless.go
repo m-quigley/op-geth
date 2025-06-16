@@ -17,18 +17,18 @@
 package core
 
 import (
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/lru"
-	"github.com/m-quigley/go-ethereum/consensus/beacon"
-	"github.com/m-quigley/go-ethereum/consensus/ethash"
-	"github.com/m-quigley/go-ethereum/core/state"
-	"github.com/m-quigley/go-ethereum/core/stateless"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/trie"
-	"github.com/m-quigley/go-ethereum/triedb"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/lru"
+	"github.com/m-quigley/op-geth/consensus/beacon"
+	"github.com/m-quigley/op-geth/consensus/ethash"
+	"github.com/m-quigley/op-geth/core/state"
+	"github.com/m-quigley/op-geth/core/stateless"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/trie"
+	"github.com/m-quigley/op-geth/triedb"
 )
 
 // ExecuteStateless runs a stateless execution based on a witness, verifies

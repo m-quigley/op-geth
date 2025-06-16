@@ -25,21 +25,21 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/accounts/abi"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/consensus"
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/state"
-	"github.com/m-quigley/go-ethereum/core/tracing"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/core/vm/program"
-	"github.com/m-quigley/go-ethereum/eth/tracers"
-	"github.com/m-quigley/go-ethereum/eth/tracers/logger"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/accounts/abi"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/consensus"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/state"
+	"github.com/m-quigley/op-geth/core/tracing"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/core/vm/program"
+	"github.com/m-quigley/op-geth/eth/tracers"
+	"github.com/m-quigley/op-geth/eth/tracers/logger"
+	"github.com/m-quigley/op-geth/params"
 
 	// force-load js tracers to trigger registration
-	_ "github.com/m-quigley/go-ethereum/eth/tracers/js"
+	_ "github.com/m-quigley/op-geth/eth/tracers/js"
 )
 
 func TestDefaults(t *testing.T) {
@@ -601,7 +601,7 @@ func TestEip2929Cases(t *testing.T) {
 
 // TestColdAccountAccessCost test that the cold account access cost is reported
 // correctly
-// see: https://github.com/m-quigley/go-ethereum/issues/22649
+// see: https://github.com/m-quigley/op-geth/issues/22649
 func TestColdAccountAccessCost(t *testing.T) {
 	for i, tc := range []struct {
 		code []byte

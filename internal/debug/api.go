@@ -36,8 +36,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-bexpr"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // Handler is the global debugging handler.

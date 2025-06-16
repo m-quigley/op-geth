@@ -21,7 +21,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 // transientStorage is a representation of EIP-1153 "Transient Storage".

@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/internal/version"
+	"github.com/m-quigley/op-geth/internal/version"
 )
 
 const (

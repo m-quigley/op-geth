@@ -24,12 +24,12 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/rlp"
-	"github.com/m-quigley/go-ethereum/trie/trienode"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/rlp"
+	"github.com/m-quigley/op-geth/trie/trienode"
 )
 
 type Storage map[common.Hash]common.Hash

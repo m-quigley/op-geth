@@ -23,10 +23,10 @@ import (
 	"math/big"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/crypto/kzg4844"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/crypto/kzg4844"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 // txJSON is the JSON representation of transactions.

@@ -26,17 +26,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/accounts/keystore"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/internal/ethapi"
-	"github.com/m-quigley/go-ethereum/rlp"
-	"github.com/m-quigley/go-ethereum/signer/core"
-	"github.com/m-quigley/go-ethereum/signer/core/apitypes"
-	"github.com/m-quigley/go-ethereum/signer/fourbyte"
-	"github.com/m-quigley/go-ethereum/signer/storage"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/accounts/keystore"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/internal/ethapi"
+	"github.com/m-quigley/op-geth/rlp"
+	"github.com/m-quigley/op-geth/signer/core"
+	"github.com/m-quigley/op-geth/signer/core/apitypes"
+	"github.com/m-quigley/op-geth/signer/fourbyte"
+	"github.com/m-quigley/op-geth/signer/storage"
 )
 
 // Used for testing

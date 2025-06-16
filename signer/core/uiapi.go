@@ -24,11 +24,11 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/accounts/keystore"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/math"
-	"github.com/m-quigley/go-ethereum/crypto"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/accounts/keystore"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/math"
+	"github.com/m-quigley/op-geth/crypto"
 )
 
 // UIServerAPI implements methods Clef provides for a UI to query, in the bidirectional communication

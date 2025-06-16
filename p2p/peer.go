@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common/mclock"
-	"github.com/m-quigley/go-ethereum/event"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/metrics"
-	"github.com/m-quigley/go-ethereum/p2p/enode"
-	"github.com/m-quigley/go-ethereum/p2p/enr"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common/mclock"
+	"github.com/m-quigley/op-geth/event"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/metrics"
+	"github.com/m-quigley/op-geth/p2p/enode"
+	"github.com/m-quigley/op-geth/p2p/enr"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 var (

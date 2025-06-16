@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/m-quigley/go-ethereum/p2p"
-	"github.com/m-quigley/go-ethereum/p2p/nat"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/p2p"
+	"github.com/m-quigley/op-geth/p2p/nat"
+	"github.com/m-quigley/op-geth/rpc"
 )
 
 const (

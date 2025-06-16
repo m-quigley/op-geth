@@ -23,9 +23,9 @@ import (
 	"path/filepath"
 
 	"github.com/google/uuid"
-	"github.com/m-quigley/go-ethereum/accounts/keystore"
-	"github.com/m-quigley/go-ethereum/cmd/utils"
-	"github.com/m-quigley/go-ethereum/crypto"
+	"github.com/m-quigley/op-geth/accounts/keystore"
+	"github.com/m-quigley/op-geth/cmd/utils"
+	"github.com/m-quigley/op-geth/crypto"
 	"github.com/urfave/cli/v2"
 )
 

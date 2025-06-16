@@ -16,7 +16,7 @@
 
 package rawdb
 
-import "github.com/m-quigley/go-ethereum/ethdb"
+import "github.com/m-quigley/op-geth/ethdb"
 
 // KeyLengthIterator is a wrapper for a database iterator that ensures only key-value pairs
 // with a specific key length will be returned.

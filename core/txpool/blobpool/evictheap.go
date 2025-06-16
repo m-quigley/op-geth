@@ -23,7 +23,7 @@ import (
 	"slices"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 // evictHeap is a helper data structure to keep track of the cheapest bottleneck

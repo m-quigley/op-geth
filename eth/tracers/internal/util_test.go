@@ -19,7 +19,7 @@ package internal
 import (
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/core/vm"
+	"github.com/m-quigley/op-geth/core/vm"
 )
 
 func TestMemCopying(t *testing.T) {

@@ -25,15 +25,15 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/consensus/misc/eip4844"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/crypto/kzg4844"
-	"github.com/m-quigley/go-ethereum/eth/protocols/eth"
-	"github.com/m-quigley/go-ethereum/internal/utesting"
-	"github.com/m-quigley/go-ethereum/p2p"
-	"github.com/m-quigley/go-ethereum/p2p/enode"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/consensus/misc/eip4844"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/crypto/kzg4844"
+	"github.com/m-quigley/op-geth/eth/protocols/eth"
+	"github.com/m-quigley/op-geth/internal/utesting"
+	"github.com/m-quigley/op-geth/p2p"
+	"github.com/m-quigley/op-geth/p2p/enode"
 )
 
 // Suite represents a structure used to test a node's conformance

@@ -25,7 +25,7 @@ import (
 	"sync"
 	"unicode"
 
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/log"
 )
 
 var (

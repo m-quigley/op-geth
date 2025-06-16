@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/m-quigley/go-ethereum/ethclient"
-	"github.com/m-quigley/go-ethereum/internal/debug"
-	"github.com/m-quigley/go-ethereum/internal/flags"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/ethclient"
+	"github.com/m-quigley/op-geth/internal/debug"
+	"github.com/m-quigley/op-geth/internal/flags"
+	"github.com/m-quigley/op-geth/rpc"
 	"github.com/urfave/cli/v2"
 )
 

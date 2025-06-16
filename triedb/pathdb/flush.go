@@ -18,10 +18,10 @@ package pathdb
 
 import (
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/ethdb"
-	"github.com/m-quigley/go-ethereum/trie/trienode"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/ethdb"
+	"github.com/m-quigley/op-geth/trie/trienode"
 )
 
 // nodeCacheKey constructs the unique key of clean cache. The assumption is held

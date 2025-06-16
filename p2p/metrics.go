@@ -22,7 +22,7 @@ import (
 	"errors"
 	"net"
 
-	"github.com/m-quigley/go-ethereum/metrics"
+	"github.com/m-quigley/op-geth/metrics"
 )
 
 const (

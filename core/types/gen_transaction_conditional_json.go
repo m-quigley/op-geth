@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/m-quigley/go-ethereum/common/math"
+	"github.com/m-quigley/op-geth/common/math"
 )
 
 var _ = (*transactionConditionalMarshalling)(nil)

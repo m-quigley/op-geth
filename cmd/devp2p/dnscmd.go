@@ -25,11 +25,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/accounts/keystore"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/console/prompt"
-	"github.com/m-quigley/go-ethereum/p2p/dnsdisc"
-	"github.com/m-quigley/go-ethereum/p2p/enode"
+	"github.com/m-quigley/op-geth/accounts/keystore"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/console/prompt"
+	"github.com/m-quigley/op-geth/p2p/dnsdisc"
+	"github.com/m-quigley/op-geth/p2p/enode"
 	"github.com/urfave/cli/v2"
 )
 

@@ -25,11 +25,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/forkid"
-	"github.com/m-quigley/go-ethereum/p2p/enr"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/forkid"
+	"github.com/m-quigley/op-geth/p2p/enr"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/rlp"
 	"github.com/urfave/cli/v2"
 )
 

@@ -22,7 +22,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 // Node is a wrapper which contains the encoded blob of the trie node and its

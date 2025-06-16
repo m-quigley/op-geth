@@ -19,7 +19,7 @@ package request
 import (
 	"sync"
 
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // Module represents a mechanism which is typically responsible for downloading

@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // diffLayer represents a collection of modifications made to the in-memory tries

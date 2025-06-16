@@ -26,17 +26,17 @@ import (
 
 	"github.com/dop251/goja"
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/core/tracing"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/eth/tracers"
-	"github.com/m-quigley/go-ethereum/eth/tracers/internal"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/core/tracing"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/eth/tracers"
+	"github.com/m-quigley/op-geth/eth/tracers/internal"
+	"github.com/m-quigley/op-geth/params"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/hexutil"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/crypto"
-	jsassets "github.com/m-quigley/go-ethereum/eth/tracers/js/internal/tracers"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/hexutil"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/crypto"
+	jsassets "github.com/m-quigley/op-geth/eth/tracers/js/internal/tracers"
 )
 
 var assetTracers = make(map[string]string)

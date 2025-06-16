@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

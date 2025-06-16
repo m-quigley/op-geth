@@ -19,8 +19,8 @@ package locals
 import (
 	"errors"
 
-	"github.com/m-quigley/go-ethereum/core/txpool"
-	"github.com/m-quigley/go-ethereum/core/txpool/legacypool"
+	"github.com/m-quigley/op-geth/core/txpool"
+	"github.com/m-quigley/op-geth/core/txpool/legacypool"
 )
 
 // IsTemporaryReject determines whether the given error indicates a temporary

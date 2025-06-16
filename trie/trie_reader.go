@@ -17,9 +17,9 @@
 package trie
 
 import (
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/triedb/database"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/triedb/database"
 )
 
 // trieReader is a wrapper of the underlying node reader. It's not safe

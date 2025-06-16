@@ -20,10 +20,10 @@ import (
 	"maps"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/common/math"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/trie/utils"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/common/math"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/trie/utils"
 )
 
 // mode specifies how a tree location has been accessed

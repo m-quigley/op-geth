@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 func TestMemoryCopy(t *testing.T) {

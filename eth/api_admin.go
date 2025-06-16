@@ -24,9 +24,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/rlp"
 )
 
 // AdminAPI is the collection of Ethereum full node related APIs for node

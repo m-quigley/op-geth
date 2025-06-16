@@ -22,13 +22,13 @@ import (
 	"os"
 	"slices"
 
-	"github.com/m-quigley/go-ethereum/beacon/blsync"
-	"github.com/m-quigley/go-ethereum/cmd/utils"
-	"github.com/m-quigley/go-ethereum/internal/debug"
-	"github.com/m-quigley/go-ethereum/internal/flags"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/node"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/beacon/blsync"
+	"github.com/m-quigley/op-geth/cmd/utils"
+	"github.com/m-quigley/op-geth/internal/debug"
+	"github.com/m-quigley/op-geth/internal/flags"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/node"
+	"github.com/m-quigley/op-geth/rpc"
 	"github.com/urfave/cli/v2"
 )
 

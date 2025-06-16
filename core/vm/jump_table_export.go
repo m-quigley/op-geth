@@ -19,7 +19,7 @@ package vm
 import (
 	"errors"
 
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // LookupInstructionSet returns the instruction set for the fork configured by

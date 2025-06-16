@@ -19,11 +19,11 @@ package api
 import (
 	"reflect"
 
-	"github.com/m-quigley/go-ethereum/beacon/light/request"
-	"github.com/m-quigley/go-ethereum/beacon/light/sync"
-	"github.com/m-quigley/go-ethereum/beacon/types"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/beacon/light/request"
+	"github.com/m-quigley/op-geth/beacon/light/sync"
+	"github.com/m-quigley/op-geth/beacon/types"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // ApiServer is a wrapper around BeaconLightApi that implements request.requestServer.

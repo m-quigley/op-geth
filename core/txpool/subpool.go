@@ -21,11 +21,11 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto/kzg4844"
-	"github.com/m-quigley/go-ethereum/event"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto/kzg4844"
+	"github.com/m-quigley/op-geth/event"
 )
 
 // LazyTransaction contains a small subset of the transaction properties that is

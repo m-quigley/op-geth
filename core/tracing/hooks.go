@@ -19,7 +19,7 @@
 // invoked by the go-ethereum core at various points in the state transition.
 //
 // To create a tracer that can be invoked with Geth, you need to register it using
-// [github.com/m-quigley/go-ethereum/eth/tracers.LiveDirectory.Register].
+// [github.com/m-quigley/op-geth/eth/tracers.LiveDirectory.Register].
 //
 // See https://geth.ethereum.org/docs/developers/evm-tracing/live-tracing for a tutorial.
 package tracing
@@ -28,9 +28,9 @@ import (
 	"math/big"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/params"
 )
 
 // OpContext provides the context at which the opcode is being

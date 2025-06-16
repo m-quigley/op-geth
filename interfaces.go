@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

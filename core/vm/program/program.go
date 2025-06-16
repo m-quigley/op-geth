@@ -27,7 +27,7 @@ import (
 	"math/big"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/core/vm"
+	"github.com/m-quigley/op-geth/core/vm"
 )
 
 // Program is a simple bytecode container. It can be used to construct

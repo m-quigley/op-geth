@@ -29,13 +29,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/internal/testlog"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/p2p/discover/v4wire"
-	"github.com/m-quigley/go-ethereum/p2p/discover/v5wire"
-	"github.com/m-quigley/go-ethereum/p2p/enode"
-	"github.com/m-quigley/go-ethereum/p2p/enr"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/internal/testlog"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/p2p/discover/v4wire"
+	"github.com/m-quigley/op-geth/p2p/discover/v5wire"
+	"github.com/m-quigley/op-geth/p2p/enode"
+	"github.com/m-quigley/op-geth/p2p/enr"
+	"github.com/m-quigley/op-geth/rlp"
 	"github.com/stretchr/testify/require"
 )
 

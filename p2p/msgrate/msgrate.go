@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // measurementImpact is the impact a single measurement has on a peer's final

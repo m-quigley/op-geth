@@ -22,9 +22,9 @@ import (
 	"slices"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/cmd/devp2p/internal/v5test"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/p2p/discover"
+	"github.com/m-quigley/op-geth/cmd/devp2p/internal/v5test"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/p2p/discover"
 	"github.com/urfave/cli/v2"
 )
 

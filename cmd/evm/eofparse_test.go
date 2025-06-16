@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/vm"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/vm"
 )
 
 func FuzzEofParsing(f *testing.F) {

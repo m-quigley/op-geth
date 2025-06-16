@@ -24,7 +24,7 @@ import (
 	"reflect"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/rlp/internal/rlpstruct"
+	"github.com/m-quigley/op-geth/rlp/internal/rlpstruct"
 )
 
 var (

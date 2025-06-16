@@ -27,9 +27,9 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/kylelemons/godebug/diff"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/rlp"
 	"github.com/stretchr/testify/require"
 )
 

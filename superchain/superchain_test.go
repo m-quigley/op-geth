@@ -3,7 +3,7 @@ package superchain
 import (
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 	"github.com/stretchr/testify/require"
 )
 

@@ -29,8 +29,8 @@ import (
 
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/common"
 )
 
 var (

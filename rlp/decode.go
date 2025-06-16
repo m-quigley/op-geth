@@ -29,7 +29,7 @@ import (
 	"sync"
 
 	"github.com/holiman/uint256"
-	"github.com/m-quigley/go-ethereum/rlp/internal/rlpstruct"
+	"github.com/m-quigley/op-geth/rlp/internal/rlpstruct"
 )
 
 //lint:ignore ST1012 EOL is not an error.

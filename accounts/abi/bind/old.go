@@ -15,7 +15,7 @@
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package bind is the runtime for abigen v1 generated contract bindings.
-// Deprecated: please use github.com/m-quigley/go-ethereum/bind/v2
+// Deprecated: please use github.com/m-quigley/op-geth/bind/v2
 package bind
 
 import (
@@ -27,20 +27,20 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/accounts/abi"
-	"github.com/m-quigley/go-ethereum/accounts/abi/abigen"
-	bind2 "github.com/m-quigley/go-ethereum/accounts/abi/bind/v2"
-	"github.com/m-quigley/go-ethereum/accounts/external"
-	"github.com/m-quigley/go-ethereum/accounts/keystore"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/accounts/abi"
+	"github.com/m-quigley/op-geth/accounts/abi/abigen"
+	bind2 "github.com/m-quigley/op-geth/accounts/abi/bind/v2"
+	"github.com/m-quigley/op-geth/accounts/external"
+	"github.com/m-quigley/op-geth/accounts/keystore"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // Bind generates a v1 contract binding.
-// Deprecated: binding generation has moved to github.com/m-quigley/go-ethereum/accounts/abi/abigen
+// Deprecated: binding generation has moved to github.com/m-quigley/op-geth/accounts/abi/abigen
 func Bind(types []string, abis []string, bytecodes []string, fsigs []map[string]string, pkg string, libs map[string]string, aliases map[string]string) (string, error) {
 	return abigen.Bind(types, abis, bytecodes, fsigs, pkg, libs, aliases)
 }

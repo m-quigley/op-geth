@@ -24,7 +24,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/params"
 )
 
 const (

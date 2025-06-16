@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/m-quigley/go-ethereum/core/types"
+	"github.com/m-quigley/op-geth/core/types"
 )
 
 // senderCacherOnce is used to ensure that the SenderCacher is initialized only once.

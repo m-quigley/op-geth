@@ -42,10 +42,10 @@ import (
 	"time"
 
 	pcsc "github.com/gballet/go-libpcsclite"
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/event"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/event"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // Scheme is the URI prefix for smartcard wallets.

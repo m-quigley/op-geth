@@ -16,7 +16,7 @@
 
 package snapshot
 
-import "github.com/m-quigley/go-ethereum/metrics"
+import "github.com/m-quigley/op-geth/metrics"
 
 // Metrics in generation
 var (

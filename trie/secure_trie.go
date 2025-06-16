@@ -17,11 +17,11 @@
 package trie
 
 import (
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/rlp"
-	"github.com/m-quigley/go-ethereum/trie/trienode"
-	"github.com/m-quigley/go-ethereum/triedb/database"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/rlp"
+	"github.com/m-quigley/op-geth/trie/trienode"
+	"github.com/m-quigley/op-geth/triedb/database"
 )
 
 // preimageStore wraps the methods of a backing store for reading and writing

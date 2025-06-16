@@ -23,7 +23,7 @@ import (
 	"math"
 	"sort"
 
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth/common"
 )
 
 // Params defines the basic parameters of the log index structure.

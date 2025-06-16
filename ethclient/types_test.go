@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum"
-	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/op-geth"
+	"github.com/m-quigley/op-geth/common"
 )
 
 func TestToFilterArg(t *testing.T) {

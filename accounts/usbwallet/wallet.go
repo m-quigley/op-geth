@@ -26,12 +26,12 @@ import (
 	"time"
 
 	"github.com/karalabe/hid"
-	"github.com/m-quigley/go-ethereum"
-	"github.com/m-quigley/go-ethereum/accounts"
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth"
+	"github.com/m-quigley/op-geth/accounts"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/log"
 )
 
 // Maximum time between wallet health checks to detect USB unplugs.

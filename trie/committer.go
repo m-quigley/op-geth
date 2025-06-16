@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/trie/trienode"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/trie/trienode"
 )
 
 // committer is the tool used for the trie Commit operation. The committer will

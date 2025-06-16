@@ -22,7 +22,7 @@ import (
 	metrics2 "runtime/metrics"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/metrics"
+	"github.com/m-quigley/op-geth/metrics"
 )
 
 // ExampleMetrics returns an ordered registry populated with a sample of metrics.

@@ -27,17 +27,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/consensus/ethash"
-	"github.com/m-quigley/go-ethereum/core/rawdb"
-	"github.com/m-quigley/go-ethereum/core/state"
-	"github.com/m-quigley/go-ethereum/core/types"
-	"github.com/m-quigley/go-ethereum/core/vm"
-	"github.com/m-quigley/go-ethereum/ethdb/pebble"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/triedb"
-	"github.com/m-quigley/go-ethereum/triedb/hashdb"
-	"github.com/m-quigley/go-ethereum/triedb/pathdb"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/consensus/ethash"
+	"github.com/m-quigley/op-geth/core/rawdb"
+	"github.com/m-quigley/op-geth/core/state"
+	"github.com/m-quigley/op-geth/core/types"
+	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/ethdb/pebble"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/triedb"
+	"github.com/m-quigley/op-geth/triedb/hashdb"
+	"github.com/m-quigley/op-geth/triedb/pathdb"
 )
 
 // rewindTest is a test case for chain rollback upon user request.

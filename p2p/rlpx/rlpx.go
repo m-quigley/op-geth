@@ -34,9 +34,9 @@ import (
 	"time"
 
 	"github.com/golang/snappy"
-	"github.com/m-quigley/go-ethereum/crypto"
-	"github.com/m-quigley/go-ethereum/crypto/ecies"
-	"github.com/m-quigley/go-ethereum/rlp"
+	"github.com/m-quigley/op-geth/crypto"
+	"github.com/m-quigley/op-geth/crypto/ecies"
+	"github.com/m-quigley/op-geth/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

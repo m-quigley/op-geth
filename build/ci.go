@@ -57,9 +57,9 @@ import (
 	"time"
 
 	"github.com/cespare/cp"
-	"github.com/m-quigley/go-ethereum/crypto/signify"
-	"github.com/m-quigley/go-ethereum/internal/build"
-	"github.com/m-quigley/go-ethereum/internal/version"
+	"github.com/m-quigley/op-geth/crypto/signify"
+	"github.com/m-quigley/op-geth/internal/build"
+	"github.com/m-quigley/op-geth/internal/version"
 )
 
 var (
@@ -234,11 +234,11 @@ func buildFlags(env build.Environment, staticLinking bool, buildTags []string) (
 	// cgo-linker further down.
 	ld = append(ld, "--buildid=none")
 	if env.Commit != "" {
-		ld = append(ld, "-X", "github.com/m-quigley/go-ethereum/internal/version.gitCommit="+env.Commit)
-		ld = append(ld, "-X", "github.com/m-quigley/go-ethereum/internal/version.gitDate="+env.Date)
+		ld = append(ld, "-X", "github.com/m-quigley/op-geth/internal/version.gitCommit="+env.Commit)
+		ld = append(ld, "-X", "github.com/m-quigley/op-geth/internal/version.gitDate="+env.Date)
 	}
 	if env.Tag != "" {
-		ld = append(ld, "-X", "github.com/m-quigley/go-ethereum/version.gitTag="+env.Tag)
+		ld = append(ld, "-X", "github.com/m-quigley/op-geth/version.gitTag="+env.Tag)
 	}
 	// Strip DWARF on darwin. This used to be required for certain things,
 	// and there is no downside to this, so we just keep doing it.
@@ -404,8 +404,8 @@ func doCheckGenerate() {
 func doCheckBadDeps() {
 	baddeps := [][2]string{
 		// Rawdb tends to be a dumping ground for db utils, sometimes leaking the db itself
-		{"github.com/m-quigley/go-ethereum/core/rawdb", "github.com/m-quigley/go-ethereum/ethdb/leveldb"},
-		{"github.com/m-quigley/go-ethereum/core/rawdb", "github.com/m-quigley/go-ethereum/ethdb/pebbledb"},
+		{"github.com/m-quigley/op-geth/core/rawdb", "github.com/m-quigley/op-geth/ethdb/leveldb"},
+		{"github.com/m-quigley/op-geth/core/rawdb", "github.com/m-quigley/op-geth/ethdb/pebbledb"},
 	}
 	tc := new(build.GoToolchain)
 

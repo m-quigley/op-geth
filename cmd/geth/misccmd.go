@@ -22,7 +22,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/m-quigley/go-ethereum/internal/version"
+	"github.com/m-quigley/op-geth/internal/version"
 	"github.com/urfave/cli/v2"
 )
 

@@ -23,12 +23,12 @@ import (
 	"os"
 	"slices"
 
-	"github.com/m-quigley/go-ethereum/core/history"
-	"github.com/m-quigley/go-ethereum/internal/flags"
-	"github.com/m-quigley/go-ethereum/internal/utesting"
-	"github.com/m-quigley/go-ethereum/log"
-	"github.com/m-quigley/go-ethereum/params"
-	"github.com/m-quigley/go-ethereum/rpc"
+	"github.com/m-quigley/op-geth/core/history"
+	"github.com/m-quigley/op-geth/internal/flags"
+	"github.com/m-quigley/op-geth/internal/utesting"
+	"github.com/m-quigley/op-geth/log"
+	"github.com/m-quigley/op-geth/params"
+	"github.com/m-quigley/op-geth/rpc"
 	"github.com/urfave/cli/v2"
 )
 

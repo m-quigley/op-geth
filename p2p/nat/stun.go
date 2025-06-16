@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/op-geth/log"
 	stunV2 "github.com/pion/stun/v2"
 )
 

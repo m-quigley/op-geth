@@ -21,8 +21,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/m-quigley/go-ethereum/common"
-	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/op-geth/common"
+	"github.com/m-quigley/op-geth/params"
 )
 
 func TestValidateCode(t *testing.T) {
