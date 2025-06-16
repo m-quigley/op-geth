@@ -1,4 +1,4 @@
-module github.com/m-quigley/go-ethereum
+module github.com/m-quigley/op-geth
 
 go 1.23.0
 
