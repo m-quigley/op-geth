@@ -20,8 +20,8 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/go-ethereum/crypto"
 )
 
 func BenchmarkMerge(b *testing.B) {

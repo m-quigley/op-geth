@@ -28,11 +28,11 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/m-quigley/go-ethereum/common/math"
+	"github.com/m-quigley/go-ethereum/crypto"
+	"github.com/m-quigley/go-ethereum/p2p/enode"
+	"github.com/m-quigley/go-ethereum/p2p/enr"
+	"github.com/m-quigley/go-ethereum/rlp"
 )
 
 // RPC packet types

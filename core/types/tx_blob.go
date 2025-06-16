@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
 	"github.com/holiman/uint256"
+	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/go-ethereum/crypto/kzg4844"
+	"github.com/m-quigley/go-ethereum/params"
+	"github.com/m-quigley/go-ethereum/rlp"
 )
 
 // BlobTx represents an EIP-4844 transaction.

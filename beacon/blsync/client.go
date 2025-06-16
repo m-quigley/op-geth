@@ -17,18 +17,18 @@
 package blsync
 
 import (
-	"github.com/ethereum/go-ethereum/beacon/light"
-	"github.com/ethereum/go-ethereum/beacon/light/api"
-	"github.com/ethereum/go-ethereum/beacon/light/request"
-	"github.com/ethereum/go-ethereum/beacon/light/sync"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/beacon/types"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/m-quigley/go-ethereum/beacon/light"
+	"github.com/m-quigley/go-ethereum/beacon/light/api"
+	"github.com/m-quigley/go-ethereum/beacon/light/request"
+	"github.com/m-quigley/go-ethereum/beacon/light/sync"
+	"github.com/m-quigley/go-ethereum/beacon/params"
+	"github.com/m-quigley/go-ethereum/beacon/types"
+	"github.com/m-quigley/go-ethereum/common"
+	"github.com/m-quigley/go-ethereum/common/mclock"
+	"github.com/m-quigley/go-ethereum/ethdb/memorydb"
+	"github.com/m-quigley/go-ethereum/event"
+	"github.com/m-quigley/go-ethereum/log"
+	"github.com/m-quigley/go-ethereum/rpc"
 )
 
 type Client struct {

@@ -24,7 +24,7 @@ import (
 	"log/slog"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/m-quigley/go-ethereum/log"
 )
 
 const (

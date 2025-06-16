@@ -3,7 +3,7 @@ package downloader
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/m-quigley/go-ethereum/core/types"
 	"github.com/stretchr/testify/assert"
 )
 

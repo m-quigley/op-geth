@@ -3,10 +3,10 @@
 Golang execution layer implementation of the Ethereum protocol.
 
 [![API Reference](
-https://pkg.go.dev/badge/github.com/ethereum/go-ethereum
-)](https://pkg.go.dev/github.com/ethereum/go-ethereum?tab=doc)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ethereum/go-ethereum)](https://goreportcard.com/report/github.com/ethereum/go-ethereum)
-[![Travis](https://app.travis-ci.com/ethereum/go-ethereum.svg?branch=master)](https://app.travis-ci.com/github/ethereum/go-ethereum)
+https://pkg.go.dev/badge/github.com/m-quigley/go-ethereum
+)](https://pkg.go.dev/github.com/m-quigley/go-ethereum?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/m-quigley/go-ethereum)](https://goreportcard.com/report/github.com/m-quigley/go-ethereum)
+[![Travis](https://app.travis-ci.com/m-quigley/go-ethereum.svg?branch=master)](https://app.travis-ci.com/github/m-quigley/go-ethereum)
 [![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/nthXNEv)
 
 Automated builds are available for stable releases and the unstable master branch. Binary
@@ -241,7 +241,7 @@ testing procedures.
 ### Contributing to geth.ethereum.org
 
 For contributions to the [go-ethereum website](https://geth.ethereum.org), please checkout and raise pull requests against the `website` branch.
-For more detailed instructions please see the `website` branch [README](https://github.com/ethereum/go-ethereum/tree/website#readme) or the 
+For more detailed instructions please see the `website` branch [README](https://github.com/m-quigley/go-ethereum/tree/website#readme) or the 
 [contributing](https://geth.ethereum.org/docs/developers/geth-developer/contributing) page of the website.
 
 ## License
