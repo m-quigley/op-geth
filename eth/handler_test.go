@@ -28,7 +28,6 @@ import (
 	"github.com/m-quigley/op-geth/core/rawdb"
 	"github.com/m-quigley/op-geth/core/txpool"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/core/vm"
 	"github.com/m-quigley/op-geth/crypto"
 	"github.com/m-quigley/op-geth/eth/ethconfig"
 	"github.com/m-quigley/op-geth/ethdb"
@@ -182,7 +181,7 @@ func newTestHandlerWithBlocks(blocks int) *testHandler {
 		Config: params.TestChainConfig,
 		Alloc:  types.GenesisAlloc{testAddr: {Balance: big.NewInt(1000000)}},
 	}
-	chain, _ := core.NewBlockChain(db, nil, gspec, nil, ethash.NewFaker(), vm.Config{}, nil)
+	chain, _ := core.NewBlockChain(db, gspec, ethash.NewFaker(), nil)
 
 	_, bs, _ := core.GenerateChainWithGenesis(gspec, ethash.NewFaker(), blocks, nil)
 	if _, err := chain.InsertChain(bs); err != nil {

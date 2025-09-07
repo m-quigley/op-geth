@@ -25,12 +25,11 @@ import (
 	"github.com/m-quigley/op-geth/common"
 	"github.com/m-quigley/op-geth/crypto"
 	"github.com/m-quigley/op-geth/rlp"
-	"golang.org/x/crypto/sha3"
 )
 
 // hasherPool holds LegacyKeccak256 hashers for rlpHash.
 var hasherPool = sync.Pool{
-	New: func() interface{} { return sha3.NewLegacyKeccak256() },
+	New: func() interface{} { return crypto.NewKeccakState() },
 }
 
 // encodeBufferPool holds temporary encoder buffers for DeriveSha and TX encoding.

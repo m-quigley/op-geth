@@ -28,7 +28,6 @@ import (
 	"github.com/m-quigley/op-geth/consensus/ethash"
 	"github.com/m-quigley/op-geth/core/rawdb"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/core/vm"
 	"github.com/m-quigley/op-geth/crypto"
 	"github.com/m-quigley/op-geth/params"
 	"github.com/m-quigley/op-geth/triedb"
@@ -119,7 +118,7 @@ func TestGeneratePOSChain(t *testing.T) {
 	})
 
 	// Import the chain. This runs all block validation rules.
-	blockchain, _ := NewBlockChain(db, nil, gspec, nil, engine, vm.Config{}, nil)
+	blockchain, _ := NewBlockChain(db, gspec, engine, nil)
 	defer blockchain.Stop()
 
 	if i, err := blockchain.InsertChain(genchain); err != nil {
@@ -234,7 +233,7 @@ func ExampleGenerateChain() {
 	})
 
 	// Import the chain. This runs all block validation rules.
-	blockchain, _ := NewBlockChain(db, DefaultCacheConfigWithScheme(rawdb.HashScheme), gspec, nil, ethash.NewFaker(), vm.Config{}, nil)
+	blockchain, _ := NewBlockChain(db, gspec, ethash.NewFaker(), DefaultConfig().WithStateScheme(rawdb.HashScheme))
 	defer blockchain.Stop()
 
 	if i, err := blockchain.InsertChain(chain); err != nil {

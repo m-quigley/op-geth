@@ -27,7 +27,6 @@ import (
 	"github.com/m-quigley/op-geth/core"
 	"github.com/m-quigley/op-geth/core/rawdb"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/core/vm"
 	"github.com/m-quigley/op-geth/crypto"
 	"github.com/m-quigley/op-geth/params"
 	"github.com/m-quigley/op-geth/triedb"
@@ -217,7 +216,7 @@ func newTestBlockchain(blocks []*types.Block) *core.BlockChain {
 		if pregenerated {
 			panic("Requested chain generation outside of init")
 		}
-		chain, err := core.NewBlockChain(rawdb.NewMemoryDatabase(), nil, testGspec, nil, ethash.NewFaker(), vm.Config{}, nil)
+		chain, err := core.NewBlockChain(rawdb.NewMemoryDatabase(), testGspec, ethash.NewFaker(), nil)
 		if err != nil {
 			panic(err)
 		}

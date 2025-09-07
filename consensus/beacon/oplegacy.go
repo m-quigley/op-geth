@@ -9,7 +9,6 @@ import (
 	"github.com/m-quigley/op-geth/core/state"
 	"github.com/m-quigley/op-geth/core/types"
 	"github.com/m-quigley/op-geth/core/vm"
-	"github.com/m-quigley/op-geth/rpc"
 )
 
 type OpLegacy struct{}
@@ -79,10 +78,6 @@ func (o *OpLegacy) SealHash(header *types.Header) common.Hash {
 
 func (o *OpLegacy) CalcDifficulty(chain consensus.ChainHeaderReader, time uint64, parent *types.Header) *big.Int {
 	return big.NewInt(0)
-}
-
-func (o *OpLegacy) APIs(chain consensus.ChainHeaderReader) []rpc.API {
-	return nil
 }
 
 func (o *OpLegacy) Close() error {

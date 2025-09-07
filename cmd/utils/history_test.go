@@ -31,7 +31,6 @@ import (
 	"github.com/m-quigley/op-geth/core"
 	"github.com/m-quigley/op-geth/core/rawdb"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/core/vm"
 	"github.com/m-quigley/op-geth/crypto"
 	"github.com/m-quigley/op-geth/internal/era"
 	"github.com/m-quigley/op-geth/params"
@@ -78,7 +77,7 @@ func TestHistoryImportAndExport(t *testing.T) {
 	})
 
 	// Initialize BlockChain.
-	chain, err := core.NewBlockChain(db, nil, genesis, nil, ethash.NewFaker(), vm.Config{}, nil)
+	chain, err := core.NewBlockChain(db, genesis, ethash.NewFaker(), nil)
 	if err != nil {
 		t.Fatalf("unable to initialize chain: %v", err)
 	}
@@ -158,7 +157,7 @@ func TestHistoryImportAndExport(t *testing.T) {
 	}
 
 	// Now import Era.
-	db2, err := rawdb.NewDatabaseWithFreezer(rawdb.NewMemoryDatabase(), "", "", false)
+	db2, err := rawdb.Open(rawdb.NewMemoryDatabase(), rawdb.OpenOptions{})
 	if err != nil {
 		panic(err)
 	}
@@ -167,7 +166,7 @@ func TestHistoryImportAndExport(t *testing.T) {
 	})
 
 	genesis.MustCommit(db2, triedb.NewDatabase(db2, triedb.HashDefaults))
-	imported, err := core.NewBlockChain(db2, nil, genesis, nil, ethash.NewFaker(), vm.Config{}, nil)
+	imported, err := core.NewBlockChain(db2, genesis, ethash.NewFaker(), nil)
 	if err != nil {
 		t.Fatalf("unable to initialize chain: %v", err)
 	}

@@ -23,7 +23,6 @@ import (
 	"github.com/m-quigley/op-geth/common"
 	"github.com/m-quigley/op-geth/core/tracing"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/crypto"
 	"github.com/m-quigley/op-geth/params"
 )
 
@@ -234,11 +233,7 @@ func opKeccak256(pc *uint64, interpreter *EVMInterpreter, scope *ScopeContext) (
 	offset, size := scope.Stack.pop(), scope.Stack.peek()
 	data := scope.Memory.GetPtr(offset.Uint64(), size.Uint64())
 
-	if interpreter.hasher == nil {
-		interpreter.hasher = crypto.NewKeccakState()
-	} else {
-		interpreter.hasher.Reset()
-	}
+	interpreter.hasher.Reset()
 	interpreter.hasher.Write(data)
 	interpreter.hasher.Read(interpreter.hasherBuf[:])
 
