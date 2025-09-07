@@ -25,7 +25,6 @@ import (
 	"github.com/m-quigley/op-geth/core/types"
 	"github.com/m-quigley/op-geth/core/vm"
 	"github.com/m-quigley/op-geth/params"
-	"github.com/m-quigley/op-geth/rpc"
 )
 
 // ChainHeaderReader defines a small collection of methods needed to access the local
@@ -108,9 +107,6 @@ type Engine interface {
 	// CalcDifficulty is the difficulty adjustment algorithm. It returns the difficulty
 	// that a new block should have.
 	CalcDifficulty(chain ChainHeaderReader, time uint64, parent *types.Header) *big.Int
-
-	// APIs returns the RPC APIs this consensus engine provides.
-	APIs(chain ChainHeaderReader) []rpc.API
 
 	// Close terminates any background threads maintained by the consensus engine.
 	Close() error

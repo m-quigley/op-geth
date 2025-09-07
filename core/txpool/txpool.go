@@ -26,7 +26,6 @@ import (
 	"github.com/m-quigley/op-geth/core"
 	"github.com/m-quigley/op-geth/core/state"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/crypto/kzg4844"
 	"github.com/m-quigley/op-geth/event"
 	"github.com/m-quigley/op-geth/log"
 	"github.com/m-quigley/op-geth/params"
@@ -309,22 +308,6 @@ func (p *TxPool) GetMetadata(hash common.Hash) *TxMetadata {
 		}
 	}
 	return nil
-}
-
-// GetBlobs returns a number of blobs are proofs for the given versioned hashes.
-// This is a utility method for the engine API, enabling consensus clients to
-// retrieve blobs from the pools directly instead of the network.
-func (p *TxPool) GetBlobs(vhashes []common.Hash) ([]*kzg4844.Blob, []*kzg4844.Proof) {
-	for _, subpool := range p.subpools {
-		// It's an ugly to assume that only one pool will be capable of returning
-		// anything meaningful for this call, but anythingh else requires merging
-		// partial responses and that's too annoying to do until we get a second
-		// blobpool (probably never).
-		if blobs, proofs := subpool.GetBlobs(vhashes); blobs != nil {
-			return blobs, proofs
-		}
-	}
-	return nil, nil
 }
 
 // Add enqueues a batch of transactions into the pool if they are valid. Due

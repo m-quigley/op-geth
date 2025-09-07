@@ -18,6 +18,7 @@
 package miner
 
 import (
+	"context"
 	"math/big"
 	"sync"
 	"testing"
@@ -31,7 +32,7 @@ import (
 	"github.com/m-quigley/op-geth/core/txpool"
 	"github.com/m-quigley/op-geth/core/txpool/legacypool"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/core/vm"
+	"github.com/m-quigley/op-geth/core/types/interoptypes"
 	"github.com/m-quigley/op-geth/crypto"
 	"github.com/m-quigley/op-geth/event"
 	"github.com/m-quigley/op-geth/params"
@@ -42,12 +43,23 @@ import (
 type mockBackend struct {
 	bc     *core.BlockChain
 	txPool *txpool.TxPool
+
+	// OP-Stack additions
+	supervisorInFailsafe bool
+	queryFailsafeCb      func()
 }
 
-func NewMockBackend(bc *core.BlockChain, txPool *txpool.TxPool) *mockBackend {
+func NewMockBackend(bc *core.BlockChain, txPool *txpool.TxPool,
+	supervisorInFailsafe bool, // OP-Stack addition
+	queryFailsafeCb func(), // OP-Stack addition
+) *mockBackend {
 	return &mockBackend{
 		bc:     bc,
 		txPool: txPool,
+
+		// OP-Stack addition
+		supervisorInFailsafe: supervisorInFailsafe,
+		queryFailsafeCb:      queryFailsafeCb,
 	}
 }
 
@@ -58,6 +70,22 @@ func (m *mockBackend) BlockChain() *core.BlockChain {
 func (m *mockBackend) TxPool() *txpool.TxPool {
 	return m.txPool
 }
+
+// OP-Stack additions
+func (m *mockBackend) GetSupervisorFailsafe() bool {
+	return m.supervisorInFailsafe
+}
+func (m *mockBackend) CheckAccessList(ctx context.Context, inboxEntries []common.Hash, minSafety interoptypes.SafetyLevel, executingDescriptor interoptypes.ExecutingDescriptor) error {
+	return nil
+}
+func (m *mockBackend) QueryFailsafe(ctx context.Context) (bool, error) {
+	if m.queryFailsafeCb != nil {
+		m.queryFailsafeCb()
+	}
+	return m.supervisorInFailsafe, nil
+}
+
+var _ BackendWithInterop = (*mockBackend)(nil)
 
 type testBlockChain struct {
 	root          common.Hash
@@ -156,7 +184,7 @@ func createMiner(t *testing.T) *Miner {
 	// Create consensus engine
 	engine := clique.New(chainConfig.Clique, chainDB)
 	// Create Ethereum backend
-	bc, err := core.NewBlockChain(chainDB, nil, genesis, nil, engine, vm.Config{}, nil)
+	bc, err := core.NewBlockChain(chainDB, genesis, engine, nil)
 	if err != nil {
 		t.Fatalf("can't create new chain %v", err)
 	}
@@ -167,7 +195,7 @@ func createMiner(t *testing.T) *Miner {
 	txpool, _ := txpool.New(testTxPoolConfig.PriceLimit, blockchain, []txpool.SubPool{pool}, nil)
 
 	// Create Miner
-	backend := NewMockBackend(bc, txpool)
+	backend := NewMockBackend(bc, txpool, false, nil)
 	miner := New(backend, config, engine)
 	return miner
 }

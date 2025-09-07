@@ -28,7 +28,6 @@ import (
 	"github.com/m-quigley/op-geth/consensus/ethash"
 	"github.com/m-quigley/op-geth/core/rawdb"
 	"github.com/m-quigley/op-geth/core/types"
-	"github.com/m-quigley/op-geth/core/vm"
 	"github.com/m-quigley/op-geth/ethdb"
 	"github.com/m-quigley/op-geth/params"
 	"github.com/m-quigley/op-geth/triedb"
@@ -131,7 +130,7 @@ func testSetupGenesis(t *testing.T, scheme string) {
 				tdb := triedb.NewDatabase(db, newDbConfig(scheme))
 				oldcustomg.Commit(db, tdb)
 
-				bc, _ := NewBlockChain(db, DefaultCacheConfigWithScheme(scheme), &oldcustomg, nil, ethash.NewFullFaker(), vm.Config{}, nil)
+				bc, _ := NewBlockChain(db, &oldcustomg, ethash.NewFullFaker(), DefaultConfig().WithStateScheme(scheme))
 				defer bc.Stop()
 
 				_, blocks, _ := GenerateChainWithGenesis(&oldcustomg, ethash.NewFaker(), 4, nil)
@@ -260,7 +259,9 @@ func newDbConfig(scheme string) *triedb.Config {
 	if scheme == rawdb.HashScheme {
 		return triedb.HashDefaults
 	}
-	return &triedb.Config{PathDB: pathdb.Defaults}
+	config := *pathdb.Defaults
+	config.NoAsyncFlush = true
+	return &triedb.Config{PathDB: &config}
 }
 
 func TestVerkleGenesisCommit(t *testing.T) {
@@ -317,7 +318,14 @@ func TestVerkleGenesisCommit(t *testing.T) {
 	}
 
 	db := rawdb.NewMemoryDatabase()
-	triedb := triedb.NewDatabase(db, triedb.VerkleDefaults)
+
+	config := *pathdb.Defaults
+	config.NoAsyncFlush = true
+
+	triedb := triedb.NewDatabase(db, &triedb.Config{
+		IsVerkle: true,
+		PathDB:   &config,
+	})
 	block := genesis.MustCommit(db, triedb)
 	if !bytes.Equal(block.Root().Bytes(), expected) {
 		t.Fatalf("invalid genesis state root, expected %x, got %x", expected, block.Root())
